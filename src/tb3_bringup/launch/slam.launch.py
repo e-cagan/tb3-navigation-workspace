@@ -40,11 +40,11 @@ def generate_launch_description():
             parameters=[{'use_sim_time': True}]
         ),
 
-        # Open teleop node to control tb3
+        # Open implemented custom teleop node to control tb3 more easily
         Node(
-            name='teleop_twist_keyboard_node',
-            package='teleop_twist_keyboard',
-            executable='teleop_twist_keyboard',
+            name='teleop_node',
+            package='tb3_navigation',
+            executable='teleop_node',
             output='screen',
             prefix='xterm -e',
         ),
