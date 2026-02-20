@@ -45,4 +45,11 @@ def generate_launch_description():
             arguments=['-d', os.path.join(get_package_share_directory('nav2_bringup'), 'rviz', 'nav2_default_view.rviz')],
             parameters=[{'use_sim_time': True}],
         ),
+
+        # Run the custom navigator node implemented in tb3_navigation package
+        Node(
+            name='navigator_node',
+            package='tb3_navigation',
+            executable='navigator_node'
+        )
     ])
