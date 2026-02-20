@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'teleop_node = tb3_navigation.teleop_node:main',
+            'navigator_node = tb3_navigation.navigator_node:main',
         ],
     },
 )
