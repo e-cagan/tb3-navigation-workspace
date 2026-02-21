@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'teleop_node = tb3_navigation.teleop_node:main',
             'navigator_node = tb3_navigation.navigator_node:main',
+            'obstacle_avoidance_node = tb3_navigation.obstacle_avoidance_node:main',
         ],
     },
 )
